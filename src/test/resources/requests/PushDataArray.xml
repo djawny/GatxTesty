@@ -9,8 +9,8 @@
             <assetName>3780 4993 602-1</assetName>
             <boxData>
                <boxId>vh47112561</boxId>
-               <timestamp>2016-08-20T08:11:30.411Z</timestamp>
-               <timeReceived>2016-08-21T08:11:30.411Z</timeReceived>
+               <timestamp>2016-08-20T08:11:30.500Z</timestamp>
+               <timeReceived>2016-08-21T08:11:30.500Z</timeReceived>
                <moveCount>400</moveCount>
                <stopCount>399</stopCount>
                <moveState>DRIVING</moveState>
@@ -100,8 +100,8 @@
             <assetName>3780 4993 602-2</assetName>
             <boxData>
                <boxId>vh47112562</boxId>
-               <timestamp>2016-07-20T08:11:30.411Z</timestamp>
-               <timeReceived>2016-07-21T08:11:30.411Z</timeReceived>
+               <timestamp>2016-07-20T08:11:30.500Z</timestamp>
+               <timeReceived>2016-07-21T08:11:30.500Z</timeReceived>
                <moveCount>500</moveCount>
                <stopCount>499</stopCount>
                <moveState>STANDING</moveState>
@@ -177,8 +177,8 @@
             </boxData>
             <boxData>
                <boxId>vh47112563</boxId>
-               <timestamp>2016-06-20T08:11:30.411Z</timestamp>
-               <timeReceived>2016-06-21T08:11:30.411Z</timeReceived>
+               <timestamp>2016-06-20T08:11:30.500Z</timestamp>
+               <timeReceived>2016-06-21T08:11:30.500Z</timeReceived>
                <moveCount>500</moveCount>
                <stopCount>499</stopCount>
                <moveState>PARKING</moveState>

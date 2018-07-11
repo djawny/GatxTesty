@@ -12,7 +12,7 @@
             <events>
                <boxId>1111</boxId>
                <!--Optional:-->
-               <eventTimestamp>2017-04-05T10:10:23.499Z</eventTimestamp>
+               <eventTimestamp>2017-04-05T10:10:23.500Z</eventTimestamp>
                <eventType>DRIVE_OUT_GEOCIRCLE</eventType>
                <!--Optional:-->
                <value>Kempten1</value>
@@ -22,7 +22,7 @@
             <events>
                <boxId>1112</boxId>
                <!--Optional:-->
-               <eventTimestamp>2017-04-06T10:10:23.499Z</eventTimestamp>
+               <eventTimestamp>2017-04-06T10:10:23.500Z</eventTimestamp>
                <eventType>DRIVE_IN_GEOCIRCLE</eventType>
                <!--Optional:-->
                <value>Kempten2</value>
@@ -37,7 +37,7 @@
             <events>
                <boxId>1113</boxId>
                <!--Optional:-->
-               <eventTimestamp>2017-04-07T10:10:23.499Z</eventTimestamp>
+               <eventTimestamp>2017-04-07T10:10:23.500Z</eventTimestamp>
                <eventType>DRIVE_OUT_GEOCIRCLE</eventType>
                <!--Optional:-->
                <value>Kempten3</value>

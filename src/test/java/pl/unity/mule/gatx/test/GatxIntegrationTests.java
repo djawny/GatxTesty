@@ -205,7 +205,7 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         pushEvent1.setAssetId("4711");
         pushEvent1.setAssetName("3780 4993 602-1");
         pushEvent1.setBoxId("1111");
-        pushEvent1.setEventTimestamp(formattingUtil.makeTimestampFromString("2017-04-05 10:10:23.499"));
+        pushEvent1.setEventTimestamp(formattingUtil.makeTimestampFromString("2017-04-05 10:10:23.500"));
         pushEvent1.setEventType("O");
         pushEvent1.setValue("Kempten1");
         pushEvent1.setStatus("A");
@@ -216,7 +216,7 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         pushEvent2.setAssetId("4711");
         pushEvent2.setAssetName("3780 4993 602-1");
         pushEvent2.setBoxId("1112");
-        pushEvent2.setEventTimestamp(formattingUtil.makeTimestampFromString("2017-04-06 10:10:23.499"));
+        pushEvent2.setEventTimestamp(formattingUtil.makeTimestampFromString("2017-04-06 10:10:23.500"));
         pushEvent2.setEventType("I");
         pushEvent2.setValue("Kempten2");
         pushEvent2.setStatus("A");
@@ -227,7 +227,7 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         pushEvent3.setAssetId("4712");
         pushEvent3.setAssetName("3780 4993 602-2");
         pushEvent3.setBoxId("1113");
-        pushEvent3.setEventTimestamp(formattingUtil.makeTimestampFromString("2017-04-07 10:10:23.499"));
+        pushEvent3.setEventTimestamp(formattingUtil.makeTimestampFromString("2017-04-07 10:10:23.500"));
         pushEvent3.setEventType("O");
         pushEvent3.setValue("Kempten3");
         pushEvent3.setStatus("A");
@@ -244,8 +244,8 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         pushData1.setAssetIdProvider("d123456789");
         pushData1.setAssetName("3780 4993 602-1");
         pushData1.setBoxId("vh47112561");
-        pushData1.setTimestamp(formattingUtil.makeTimestampFromString("2016-08-20 08:11:30.411"));
-        pushData1.setTimeReceived(formattingUtil.makeTimestampFromString("2016-08-21 08:11:30.411"));
+        pushData1.setTimestamp(formattingUtil.makeTimestampFromString("2016-08-20 08:11:30.500"));
+        pushData1.setTimeReceived(formattingUtil.makeTimestampFromString("2016-08-21 08:11:30.500"));
         pushData1.setMoveCount(400);
         pushData1.setStopCount(399);
         pushData1.setMoveState("D");
@@ -285,8 +285,8 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         pushData2.setAssetIdProvider("987654321");
         pushData2.setAssetName("3780 4993 602-2");
         pushData2.setBoxId("vh47112562");
-        pushData2.setTimestamp(formattingUtil.makeTimestampFromString("2016-07-20 08:11:30.411"));
-        pushData2.setTimeReceived(formattingUtil.makeTimestampFromString("2016-07-21 08:11:30.411"));
+        pushData2.setTimestamp(formattingUtil.makeTimestampFromString("2016-07-20 08:11:30.500"));
+        pushData2.setTimeReceived(formattingUtil.makeTimestampFromString("2016-07-21 08:11:30.500"));
         pushData2.setMoveCount(500);
         pushData2.setStopCount(499);
         pushData2.setMoveState("S");
@@ -326,8 +326,8 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         pushData3.setAssetIdProvider("987654321");
         pushData3.setAssetName("3780 4993 602-2");
         pushData3.setBoxId("vh47112563");
-        pushData3.setTimestamp(formattingUtil.makeTimestampFromString("2016-06-20 08:11:30.411"));
-        pushData3.setTimeReceived(formattingUtil.makeTimestampFromString("2016-06-21 08:11:30.411"));
+        pushData3.setTimestamp(formattingUtil.makeTimestampFromString("2016-06-20 08:11:30.500"));
+        pushData3.setTimeReceived(formattingUtil.makeTimestampFromString("2016-06-21 08:11:30.500"));
         pushData3.setMoveCount(500);
         pushData3.setStopCount(499);
         pushData3.setMoveState("P");
