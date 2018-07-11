@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header />
+   <S:Body>
+      <ns2:PushEventArray xmlns:ns2="http://rail.push.ws.nicbase.com/">
+         <pushEvents>
+            <assetId>4712</assetId>
+            <!--Optional:-->
+            <assetName>3780 4993 602-2</assetName>
+            <extraField1></extraField1>
+            <events>
+               <boxId>1111</boxId>
+               <!--Optional:-->
+               <extraField2></extraField2>
+               <eventTimestamp>2017-04-07T10:10:23.499Z</eventTimestamp>
+               <eventType>DRIVE_OUT_GEOCIRCLE</eventType>
+               <!--Optional:-->
+               <value>Kempten3</value>
+               <!--Optional:-->
+               <additional />
+            </events>
+         </pushEvents>
+      </ns2:PushEventArray>
+   </S:Body>
+</S:Envelope>
