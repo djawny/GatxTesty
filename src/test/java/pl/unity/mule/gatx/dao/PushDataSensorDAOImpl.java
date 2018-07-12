@@ -21,6 +21,7 @@ public class PushDataSensorDAOImpl implements PushDataSensorDAO {
         try {
             return runner.query(connection, "select * from pushdatasensor", resultHandler);
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
@@ -33,6 +34,7 @@ public class PushDataSensorDAOImpl implements PushDataSensorDAO {
         try {
             return runner.query(connection, "select * from pushdatasensor where sensorId=?", resultHandler, sensorId);
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
@@ -45,6 +47,7 @@ public class PushDataSensorDAOImpl implements PushDataSensorDAO {
             runner.update(connection, "DELETE from pushdatasensor WHERE sensorId=?", sensorId);
             return true;
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }

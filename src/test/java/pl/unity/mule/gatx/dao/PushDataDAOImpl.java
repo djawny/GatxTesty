@@ -21,6 +21,7 @@ public class PushDataDAOImpl implements PushDataDAO {
         try {
             return runner.query(connection, "select * from pushdata", resultHandler);
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
@@ -33,6 +34,7 @@ public class PushDataDAOImpl implements PushDataDAO {
         try {
             return runner.query(connection, "select * from pushdata where boxId=?", resultHandler, boxId);
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
@@ -45,6 +47,7 @@ public class PushDataDAOImpl implements PushDataDAO {
             runner.update(connection, "DELETE from pushdata WHERE boxId=?", boxId);
             return true;
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }

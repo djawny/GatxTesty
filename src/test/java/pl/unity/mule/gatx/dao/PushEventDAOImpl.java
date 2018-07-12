@@ -20,6 +20,7 @@ public class PushEventDAOImpl implements PushEventDAO {
         try {
             return runner.query(connection, "select * from pushevent", resultHandler);
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
@@ -32,6 +33,7 @@ public class PushEventDAOImpl implements PushEventDAO {
         try {
             return runner.query(connection, "select * from pushevent where boxId=?", resultHandler, boxId);
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
@@ -44,6 +46,7 @@ public class PushEventDAOImpl implements PushEventDAO {
             runner.update(connection, "DELETE from pushevent WHERE boxId=?", boxId);
             return true;
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
