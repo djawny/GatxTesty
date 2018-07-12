@@ -41,7 +41,7 @@ public class GatxIntegrationTests extends GatxIntegrationTestsBase {
         String readFromResponseBody = httpUtil.readFromResponseBody(response);
         assertThat(readFromResponseBody).contains(SUCCESS_TRUE);
         for (PushEvent event : events) {
-            await().atMost(TIMEOUT, SECONDS).untilAsserted(() -> assertThat(pushEventDAO.getPushEventByBoxId(event.getBoxId())).isEqualToIgnoringNullFields(event));
+            await().atMost(TIMEOUT, SECONDS).untilAsserted(() -> assertThat(pushEventDAO.getPushEventByBoxId(event.getBoxId())).isNotNull().isEqualToIgnoringNullFields(event));
         }
     }
 

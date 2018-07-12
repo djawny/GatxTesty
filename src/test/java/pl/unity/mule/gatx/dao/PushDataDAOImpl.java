@@ -13,42 +13,26 @@ import java.util.List;
 public class PushDataDAOImpl implements PushDataDAO {
 
     @Override
-    public List<PushData> getAllPushData() {
-
+    public List<PushData> getAllPushData() throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
         BeanListHandler<PushData> resultHandler = new BeanListHandler<>(PushData.class);
-        try {
-            return runner.query(connection, "select * from pushdata", resultHandler);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        return runner.query(connection, "select * from pushdata", resultHandler);
     }
 
     @Override
-    public PushData getPushDataByBoxId(String boxId) {
+    public PushData getPushDataByBoxId(String boxId) throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
         BeanHandler<PushData> resultHandler = new BeanHandler<>(PushData.class);
-        try {
-            return runner.query(connection, "select * from pushdata where boxId=?", resultHandler, boxId);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        return runner.query(connection, "select * from pushdata where boxId=?", resultHandler, boxId);
     }
 
     @Override
-    public boolean deletePushDataByBoxId(String boxId) {
+    public boolean deletePushDataByBoxId(String boxId) throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
-        try {
-            runner.update(connection, "DELETE from pushdata WHERE boxId=?", boxId);
-            return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        runner.update(connection, "DELETE from pushdata WHERE boxId=?", boxId);
+        return true;
     }
 }

@@ -13,41 +13,26 @@ import java.util.List;
 public class PushEventDAOImpl implements PushEventDAO {
 
     @Override
-    public List<PushEvent> getAllPushEvents() {
+    public List<PushEvent> getAllPushEvents() throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
         BeanListHandler<PushEvent> resultHandler = new BeanListHandler<>(PushEvent.class);
-        try {
-            return runner.query(connection, "select * from pushevent", resultHandler);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        return runner.query(connection, "select * from pushevent", resultHandler);
     }
 
     @Override
-    public PushEvent getPushEventByBoxId(String boxId) {
+    public PushEvent getPushEventByBoxId(String boxId) throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
         BeanHandler<PushEvent> resultHandler = new BeanHandler<>(PushEvent.class);
-        try {
-            return runner.query(connection, "select * from pushevent where boxId=?", resultHandler, boxId);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        return runner.query(connection, "select * from pushevent where boxId=?", resultHandler, boxId);
     }
 
     @Override
-    public boolean deletePushEventsByBoxId(String boxId) {
+    public boolean deletePushEventsByBoxId(String boxId) throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
-        try {
-            runner.update(connection, "DELETE from pushevent WHERE boxId=?", boxId);
-            return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        runner.update(connection, "DELETE from pushevent WHERE boxId=?", boxId);
+        return true;
     }
 }

@@ -16,7 +16,7 @@ public abstract class GatxIntegrationTestsBase {
     protected static final String SUCCESS_FALSE = "<success>false</success>";
     protected static final int HTTP_STATUS_CODE_200 = 200;
     protected static final int HTTP_STATUS_CODE_401 = 401;
-    protected static final String INCORRECT_AUTHORIZATION = "";
+    protected static final String INCORRECT_AUTHORIZATION = "Basic 12345";
     protected static final long TIMEOUT = 5;
 
     protected HttpUtil httpUtil;

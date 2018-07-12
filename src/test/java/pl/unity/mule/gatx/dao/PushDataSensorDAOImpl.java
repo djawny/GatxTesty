@@ -13,42 +13,26 @@ import java.util.List;
 public class PushDataSensorDAOImpl implements PushDataSensorDAO {
 
     @Override
-    public List<PushDataSensor> getAllPushDataSensor() {
-
+    public List<PushDataSensor> getAllPushDataSensor() throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
         BeanListHandler<PushDataSensor> resultHandler = new BeanListHandler<>(PushDataSensor.class);
-        try {
-            return runner.query(connection, "select * from pushdatasensor", resultHandler);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        return runner.query(connection, "select * from pushdatasensor", resultHandler);
     }
 
     @Override
-    public PushDataSensor getPushDataSensorBySensorId(Integer sensorId) {
+    public PushDataSensor getPushDataSensorBySensorId(Integer sensorId) throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
         BeanHandler<PushDataSensor> resultHandler = new BeanHandler<>(PushDataSensor.class);
-        try {
-            return runner.query(connection, "select * from pushdatasensor where sensorId=?", resultHandler, sensorId);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        return runner.query(connection, "select * from pushdatasensor where sensorId=?", resultHandler, sensorId);
     }
 
     @Override
-    public boolean deletePushDataSensorBySensorId(Integer sensorId) {
+    public boolean deletePushDataSensorBySensorId(Integer sensorId) throws SQLException {
         Connection connection = ConnectionFactory.getConnection();
         QueryRunner runner = new QueryRunner();
-        try {
-            runner.update(connection, "DELETE from pushdatasensor WHERE sensorId=?", sensorId);
-            return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
+        runner.update(connection, "DELETE from pushdatasensor WHERE sensorId=?", sensorId);
+        return true;
     }
 }
