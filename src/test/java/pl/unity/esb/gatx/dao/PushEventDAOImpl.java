@@ -1,10 +1,10 @@
-package pl.unity.mule.gatx.dao;
+package pl.unity.esb.gatx.dao;
 
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
-import pl.unity.mule.gatx.ConnectionFactory;
-import pl.unity.mule.gatx.model.PushEvent;
+import pl.unity.esb.gatx.model.PushEvent;
+import pl.unity.esb.gatx.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package pl.unity.mule.gatx;
+package pl.unity.esb.gatx;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;

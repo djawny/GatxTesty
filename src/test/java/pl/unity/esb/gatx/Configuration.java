@@ -1,4 +1,4 @@
-package pl.unity.mule.gatx;
+package pl.unity.esb.gatx;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,6 +1,6 @@
-package pl.unity.mule.gatx.dao;
+package pl.unity.esb.gatx.dao;
 
-import pl.unity.mule.gatx.model.PushData;
+import pl.unity.esb.gatx.model.PushData;
 
 import java.sql.SQLException;
 import java.util.List;

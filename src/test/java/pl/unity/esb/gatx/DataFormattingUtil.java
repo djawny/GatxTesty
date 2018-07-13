@@ -1,4 +1,4 @@
-package pl.unity.mule.gatx;
+package pl.unity.esb.gatx;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

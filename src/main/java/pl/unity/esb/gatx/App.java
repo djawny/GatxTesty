@@ -1,4 +1,4 @@
-package gatx;
+package pl.unity.esb.gatx;
 
 /**
  * Hello world!

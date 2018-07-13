@@ -1,4 +1,4 @@
-package pl.unity.mule.gatx.model;
+package pl.unity.esb.gatx.model;
 
 public class PushDataSensor {
 

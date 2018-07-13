@@ -1,10 +1,10 @@
-package pl.unity.mule.gatx.test;
+package pl.unity.esb.gatx.test;
 
 import org.awaitility.Awaitility;
 import org.junit.After;
 import org.junit.Before;
-import pl.unity.mule.gatx.Configuration;
-import pl.unity.mule.gatx.HttpUtil;
+import pl.unity.esb.gatx.Configuration;
+import pl.unity.esb.gatx.HttpUtil;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

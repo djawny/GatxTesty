@@ -1,4 +1,4 @@
-package pl.unity.mule.gatx;
+package pl.unity.esb.gatx;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

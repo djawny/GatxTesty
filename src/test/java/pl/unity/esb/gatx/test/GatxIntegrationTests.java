@@ -1,12 +1,12 @@
-package pl.unity.mule.gatx.test;
+package pl.unity.esb.gatx.test;
 
 import org.apache.http.HttpResponse;
 import org.junit.Test;
-import pl.unity.mule.gatx.DataFormattingUtil;
-import pl.unity.mule.gatx.dao.*;
-import pl.unity.mule.gatx.model.PushData;
-import pl.unity.mule.gatx.model.PushDataSensor;
-import pl.unity.mule.gatx.model.PushEvent;
+import pl.unity.esb.gatx.DataFormattingUtil;
+import pl.unity.esb.gatx.dao.*;
+import pl.unity.esb.gatx.model.PushData;
+import pl.unity.esb.gatx.model.PushDataSensor;
+import pl.unity.esb.gatx.model.PushEvent;
 
 import java.nio.file.Path;
 import java.util.Arrays;
